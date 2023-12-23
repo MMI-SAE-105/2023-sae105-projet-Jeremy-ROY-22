@@ -6,84 +6,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test page</title>
-    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="stylesheet" href="/test.css" />
     <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body>
+<body x-data="{expanded: false}" :class="{noscroll: expanded}">
     <header class="header">
         <div class="header__bande">
-            <a href="/" class="header__bande--logo">
-                <img src="" alt="">
+            <a href="/">
+                <img 
+                    src="/public/icones/logo_site.svg" 
+                    alt="logo mordor"
+                    class="header__bande--logo">
             </a>
         </div>
-        <div class="header__ba,de">
+        <div class="header__bande">
             <img 
                 class="header__bande--icone"
                 src="/public/icones/menu.svg"  
-                alt="logo menu burger"
+                alt="logo menu"
                 @click="expanded = ! expanded">
+
             <nav class="header__menu menu" :class="{actif: expanded}">
                 <div class="menu__haut">
-                    <a href="/" class="menu__site">
-                        Andreu Vision
+                    <a href="/">
+                        <img 
+                            src="/public/icones/logo_site.svg" 
+                            alt="logo site"
+                            class="menu__logo">
                     </a>
                     <img 
                         class="menu__croix" 
                         src="/public/icones/croix.svg" 
                         alt="icone croix fermeture menu"
                         @click="expanded = ! expanded">
-
                 </div>
-                
                 <ul class="menu__liste">
-                    <li class="menu__principal">
+                    <li class="menu__page">
                         <a 
-                            href="/informations.html"
-                            class="menu__lien--principal">
-                            Informations
+                            href="/fr/replique.html"
+                            class="menu__page--lien">
+                            Réplique
                         </a>
                     </li>
-                    <li class="menu__ancre">
+                    <li class="menu__page">
                         <a 
-                            class="menu__ancre--lien"
-                            href="/informations.html#horaires">
-                           Horaires 
+                            class="menu__page--lien"
+                            href="/fr/films.html">
+                           Film 
                         </a>
                     </li>
-                    <li class="menu__ancre">
+                    <li class="menu__page">
                         <a 
-                            href="/informations.html#tarifs"
-                            class="menu__ancre--lien">
-                            Tarifs
+                            href="/fr/realisateur.html"
+                            class="menu__page--lien">
+                            Réalisateur
                         </a>
                     </li>
-                    <li class="menu__ancre">
+                    <li class="menu__page">
                         <a 
-                            href="/informations.html#lieu"
-                            class="menu__ancre--lien">
-                            Lieu
+                            href="/fr/musique.html"
+                            class="menu__page--lien">
+                            The shire
                         </a>
                     </li>
-                    <li class="menu__principal">
+                    <li class="menu__page">
                         <a 
-                            href="/paulandreu.html"
-                            class="menu__lien--principal">
-                            Paul Andreu
-                        </a>
-                    </li>
-                    <li class="menu__ancre">
-                        <a 
-                            href="/paulandreu.html#biographie"
-                            class="menu__ancre--lien">
-                            Biographie
-                        </a>
-                    </li>
-                    <li class="menu__ancre">
-                        <a 
-                            href="/paulandreu.html#oeuvres"
-                            class="menu__ancre--lien">
-                            Oeuvres
+                            href="/fr/livres.html"
+                            class="menu__page--lien">
+                            Livres
                         </a>
                     </li>
                 </ul>

@@ -1,0 +1,109 @@
+body{
+    background-color: black;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* menu */
+
+.menu{
+    background-color: red;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+
+    right: -100%;
+    
+    top: 0;
+ 
+    display: flex;
+    flex-direction: column;
+    transition: right 0.5s;
+}
+
+.menu__haut {
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  5px 10px 5px 15px ;
+
+}
+
+
+.actif{
+    right: 0;
+}
+
+nav > ul > li{
+    list-style: none;    
+}
+
+nav > ul > li > a {
+    list-style: none;  
+    color: white;
+    font-family: "";
+}
+
+.menu__liste{
+    padding-top: 10px;
+    padding-left: 0;
+}
+
+.menu__page{
+    font-size: var(--menu-h1);
+    padding-left: 20px;
+    padding-bottom: 0;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.menu__page--lien{
+    
+}
+
+.noscroll{
+    overflow: hidden;
+}
+
+.menu__lang{
+    color: var(--blanc-gris);
+    margin: 30px;
+}
+
+
+/* header */
+
+.header {
+    background-color: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  5px 10px 5px 15px ;
+    z-index: 2;
+}
+
+.header__bande--logo, .menu__logo{
+    width: 80px;
+}
+
+/*image fond*/
+
+
+.main__header--image{
+    max-width: 100%;
+}
+
+.main__header{
+    height: 320px;
+}
