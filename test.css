@@ -117,7 +117,49 @@ p{
 /*test footer*/
 
 .footer{
-    width: 30%;
     background-color: red;
+    width: 100%;
+}
 
+.footer__nom{
+    display: flex;
+    justify-content: center;
+    color: var(--bleu-clair);
+    font-family: var(--font-titre);
+    font-size: var(--site-header);
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.footer__infos, .footer__oeuvre, .footer__contact{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.footer__infos--lien, .footer__oeuvre--lien, .footer__contact--lien{
+    color: var(--blanc-gris);
+    font-family: var(--font-titre);
+    font-size: var(--footer-liens);
+}
+
+.footer__reseaux{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding: 10px 50px 30px 50px;
+}
+
+.footer__reseaux--logo{
+    width: 100%;
+}
+
+.footer__ligne{
+    border-color: white;
+    color: white;
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    width: 120px;
 }
