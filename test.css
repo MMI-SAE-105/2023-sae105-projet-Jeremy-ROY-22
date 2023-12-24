@@ -107,3 +107,17 @@ nav > ul > li > a {
 .main__header{
     height: 320px;
 }
+
+
+p{
+    color: white;
+}
+
+
+/*test footer*/
+
+.footer{
+    width: 30%;
+    background-color: red;
+
+}
