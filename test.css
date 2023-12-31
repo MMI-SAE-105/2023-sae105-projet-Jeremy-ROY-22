@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    margin: 0;
 }
 *,
 *:before,
@@ -97,6 +98,13 @@ nav > ul > li > a {
     width: 80px;
 }
 
+.header__bande--langue{
+    margin-left: 160px;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+
 /*image fond*/
 
 
@@ -134,7 +142,8 @@ p{
 .footer__infos, .footer__oeuvre, .footer__contact{
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
+    /* padding-left: 20px; */
+    
     padding-bottom: 20px;
 }
 

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anecdotes</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body x-data="{expanded: false}" :class="{noscroll: expanded}">
+
+
+    <header class="header">
+        <div class="header__bande">
+            <a href="/fr/index.html">
+                <img 
+                    src="/public/icones/logo_site.svg" 
+                    alt="logo mordor"
+                    class="header__bande--logo">
+            </a>
+        </div>
+        <div class="header__bande">
+            <a href="/en/index.html" class="header__bande--langue">
+                EN
+            </a>
+        </div>
+        <div class="header__bande">
+            <img 
+                class="header__bande--icone"
+                src="/public/icones/menu.svg"  
+                alt="logo menu"
+                @click="expanded = ! expanded">
+
+            <nav class="header__menu menu" :class="{actif: expanded}">
+                <div class="menu__haut">
+                    <a href="/fr/index.html">
+                        <img 
+                            src="/public/icones/logo_site.svg" 
+                            alt="logo site"
+                            class="menu__logo">
+                    </a>
+                    <img 
+                        class="menu__croix" 
+                        src="/public/icones/croix.svg" 
+                        alt="icone croix fermeture menu"
+                        @click="expanded = ! expanded">
+                </div>
+                <ul class="menu__liste">
+                    <li class="menu__page">
+                        <a 
+                            href="/fr/replique.html"
+                            class="menu__page--lien">
+                            Le Mordor Gandalf, c’est à gauche où à droite ?
+                        </a>
+                    </li>
+                    <li class="menu__page">
+                        <a 
+                            class="menu__page--lien"
+                            href="/fr/films.html">
+                            Le seigneur des anneaux
+                        </a>
+                        <a 
+                            class="menu__page--lien"
+                            href="/fr/films.html">
+                            films
+                        </a>
+                    </li>
+                    <li class="menu__page">
+                        <a 
+                            href="/fr/realisateur.html"
+                            class="menu__page--lien">
+                            Peter Jackson
+                        </a>
+                    </li>
+                    <li class="menu__page">
+                        <a 
+                            href="/fr/musique.html"
+                            class="menu__page--lien">
+                            The shire
+                        </a>
+                    </li>
+                    <li class="menu__page">
+                        <a 
+                            href="/fr/livres.html"
+                            class="menu__page--lien">
+                            Le seigneur des anneaux
+                        </a>
+                        <a 
+                            href="/fr/livres.html"
+                            class="menu__page--lien">
+                            Livres
+                        </a>
+                    </li>
+                    <li class="menu__page">
+                        <a 
+                            href="/fr/anecdotes.html"
+                            class="menu__page--lien">
+                            Anecdotes
+                        </a>
+                    </li>
+                    <li class="menu__page">
+                        <a 
+                            href="/fr/livres.html"
+                            class="menu__page--lien">
+                            Memes                      
+                        </a>
+                    </li>
+                    <li class="menu__page">
+                        <a 
+                            href="/fr/livres.html"
+                            class="menu__page--lien">
+                            Différences livres / films                        
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </div>
+
+    </header>
+
+   
+    <main class="page">
+        <header class="page__header">
+            <img src="/public/img/" alt="image trou de hobbit">
+            <h1 class="page__header--titre">
+                # Titre Article #
+            </h1>
+            <h2 class="page__header--chapo">
+                # chapo #
+            </h2>
+        </header>
+
+        <!-- suite du la page -->
+
+    </main>
+
+    <footer class="footer">
+        <a href="/fr/index.html" 
+        class="footer__logo">
+            <img 
+                src="/public/icones/logo_site.svg" 
+                alt="logo site"
+                class="footer__logo--image">
+        </a>
+        <ul class="footer__liste">
+            <li class="footer__liste--liens">
+                <a href="/fr/contact.html"
+                class="footer__liste--textes">
+                    Contact
+                </a> 
+            </li>
+            <li class="footer__liste--liens">
+                <a href="/fr/a_propos.html"
+                class="footer__liste--textes">
+                    A propos
+                </a>
+            </li>
+            <li class="footer__liste--liens">
+                <a href="/fr/glossaire.html"
+                class="footer__liste--textes">
+                    Glossaire
+                </a>
+            </li>
+            <li class="footer__liste--liens">
+                <a href="/fr/autres_projets.html"
+                class="footer__liste--textes">
+                    Autres projets
+                </a>
+            </li>     
+        </ul>
+        <div class="footer__mentions">
+            <p class="footer__mentions--texte">
+                Projet réalisé dans le cadre d’un exercice pédagogique au
+                <a href="https://mmi-montbeliard.nathanvanbignootvincler.fr/"
+                class="footer__mentions--liens">
+                    <strong><i>département MMI de Montbéliard</i></strong>
+                </a>
+            </p>   
+        </div>
+        <div class="footer__infos">
+            <p class="footer__infos--moi">
+                Roy Jérémy MMI 1 - B2 
+            </p>
+            <a href="mailto:jeremy.roy25200@gmail.com"
+            class="footer__infos--mail">
+                    jeremy.roy25200@gmail.com
+            </a>
+        </div>
+        <ul class="footer__reseau">
+            <li class="footer__reseau--lien">
+                <a href="https://open.spotify.com/playlist/6RgXVuk0K38IlhWhVALjco?si=c5ac6ac468544caf">
+                    <img src="/public/icones/spotify.svg" alt="logo spotify" class="footer reseau--image">
+                </a>
+            </li>
+            <li class="footer__reseau--lien">
+                <a href="https://instagram.com/jerem_roy?igshid=OGQ5ZDc2ODk2ZA==">
+                    <img src="/public/icones/instagram.svg" alt="logo instagram" class="footer reseau--image">
+                </a>
+            </li>
+            <li class="footer__reseau--lien">
+                <a href="">
+                    <img src="/public/icones/git.svg" alt="logo git hub" class="footer reseau--image">
+                </a>
+            </li>
+            <li class="footer__reseau--lien">
+                <a href="https://mmi-montbeliard.nathanvanbignootvincler.fr/">
+                    <img src="/public/icones/logo_mmi.png" alt="logo mmi" class="footer reseau--image">
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+</body>
+</html>
