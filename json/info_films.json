@@ -1,0 +1,75 @@
+[
+    {
+        "img":"/public/img/affiche_film1.webp",
+        "alt":"affiche La communauté de l'anneau",
+        "film":"La communauté de l'anneau",
+        "date":"2001",
+        "realisateur": "Peter Jackson",
+        "producteur" : "Peter Jackson",
+        "href":"https://www.allocine.fr/film/fichefilm_gen_cfilm=27070.html"
+    },
+    {
+        "img":"/public/img/affiche_film2.webp",
+        "alt":"affiche Les deux tours",
+        "film":" Les deux tours",
+        "date":"2002",
+        "realisateur":"Peter Jackson",
+        "producteur":"Peter Jackson",
+        "href":"https://www.allocine.fr/film/fichefilm_gen_cfilm=39186.html"
+    },
+    {
+        "img":"/public/img/affiche_film3.webp",
+        "alt":"affiche Le retour du roi",
+        "film":"Le retour du roi",
+        "date":"2003",
+        "realisateur":"Peter Jackson",
+        "producteur":"Peter Jackson",
+        "href":"https://www.allocine.fr/film/fichefilm_gen_cfilm=39187.html"
+    },
+    {
+        "img":"/public/img/affiche_film4.webp",
+        "alt":"affiche Un voyage inattendu",
+        "film":"Un voyage inattendu",
+        "date":"2012",
+        "realisateur":"Peter Jackson",
+        "producteur":"Peter Jackson",
+        "href":"https://www.allocine.fr/film/fichefilm_gen_cfilm=119089.html"
+    },
+    {
+        "img":"/public/img/affiche_film5.webp",
+        "alt":"affiche La désolation de Smaug",
+        "film":"La désolation de Smaug",
+        "date":"2013",
+        "realisateur":"Peter Jackson",
+        "producteur":"Peter Jackson",
+        "href":"https://www.allocine.fr/film/fichefilm_gen_cfilm=186918.html"
+    },
+    {
+        "img":"/public/img/affiche_film6.webp",
+        "alt":"affiche La bataille des cinq armées",
+        "film":"La bataille des cinq armées",
+        "date":"2014",
+        "realisateur":"Peter Jackson",
+        "producteur":"Peter Jackson",
+        "href":"https://www.allocine.fr/film/fichefilm_gen_cfilm=210516.html"
+    },
+    {
+        "img":"/public/img/affiche_film7.webp",
+        "alt":"affiche King-Kong ",
+        "film":"King-Kong",
+        "date":"2005",
+        "realisateur":"Peter Jackson",
+        "producteur":"Peter Jackson",
+        "href":"https://www.allocine.fr/film/fichefilm_gen_cfilm=46718.html"
+    },
+    {
+        "img":"/public/img/affiche_film8.webp",
+        "alt":"affiche Tintin - le secret de la licorne",
+        "film":"Tintin - le secret de la licorne",
+        "date":"2001",
+        "realisateur":"Steven Spielberg ",
+        "producteur":"Peter Jackson",
+        "href":"https://www.allocine.fr/film/fichefilm_gen_cfilm=49757.html"
+    }
+
+]

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title># Nom de la page #</title>
+    <title>Livres</title>
     <link rel="stylesheet" href="/src/styles.css" />
     <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -123,16 +123,81 @@
    
     <main class="page">
         <header class="page__header">
-            <img src="/public/img/" alt="image trou de hobbit">
+            <img src="/public/img/accueil.webp" alt="image trou de hobbit">
             <h1 class="page__header--titre">
-                # Titre Article #
+                Le seigneur des anneaux
+                Livres 
             </h1>
             <h2 class="page__header--chapo">
-                # chapo #
+                L'univers épique des livres "Le Seigneur des Anneaux" mais aussi l'homme derrière la magie            
             </h2>
         </header>
 
-        <!-- suite du la page -->
+        <article>
+            <img 
+                src="/public/img/tolkien.webp" 
+                alt="image J.R.R Tolkien"
+                class="page__article--image">
+            <p class="media__descriptif">J.R.R Tolkien</p>
+            <h2 class="page__header--chapo">
+                Avant de s'intéresser aux livres, il faut connaitre un peu plus sur leur auteur : J.R.R Tolkien  
+            </h2>
+            <p class="page__article--texte">
+                J.R.R Tolkien, de son nom complet : 
+                John Ronald Reuel Tolkien, 
+                est considéré comme l'un des plus grands écrivains de fantaisie grâce au "seigneur des anneaux" et tous les autres livres qui évoluent dans le même monde qu’il a créé : la Terre du milieu. 
+            </p>
+            <p class="page__article--texte">
+                Il est né en 1892, en Afrique du Sud où il a commencé à grandir avant de déménager en Angleterre à l'âge de 3 ans. Depuis son plus jeune âge il s'intéresse aux langues et en invente lui-même pour son plaisir. 
+                Pendant ses années à Oxford, il développe un intérêt pour l'écriture et illustre aussi ses écrits pour le plaisir. Après la première guerre mondiale, il devient prof de langue anglaise à Leeds puis de vieil anglais à Oxford. Pendant la deuxième moitié de sa vie, il écrit et améliore son univers avec des brouillons et des œuvres finies qu'il publiera. C'est sur le conseil de ses amis qu'il publie en 1937 le hobbit, qui devient rapidement un grand succès. Le public demande une suite et il sortira plus tard le seigneur des anneaux. 
+                Après sa mort, son fils Christopher qui l’avait aidé et conseillé dans son écriture, réuni et fini différents brouillons et écrits de son père et en fait des ouvrages qu’il sortira.
+            </p>
+            <img 
+                src="/public/img/livre_frise.webp" 
+                alt="livres hobbit + seigneur des anneaux"
+                class="page__article--image">
+            <p class="media__descriptif">Ses 4 livres les plus connus</p>
+            <h2 class="page__header--chapo">
+                L'univers épique du seigneur des anneaux 
+                et son histoire            
+            </h2>
+            <p class="page__article--texte">
+                Ce qui a permis la réussite de cet univers, c'est la sortie du Hobbit en 1937 qui donnera une mise en bouche de tout le talent, le génie et les possibilités infinies de Tolkien et son monde alors qu'il s'agit seulement d'un roman pour enfants. 
+                Il va alors mettre au propre ses textes et sortir en 54 et 55 le seigneur des anneaux en trois parties. Le livre est alors encore mieux reçu que le hobbit pour sa profondeur, sa complexité, la beauté de l'écrit et son histoire passionnante. 
+                Le monde où évolue l'histoire épate par sa richesse et ses paysages, avec des explications détaillées accompagnée de cartes dessinées par Tolkien lui même. 
+            </p>
+            <p class="page__article--texte">
+                L'histoire est simple, des héros, avec une quête, et un grand méchant. Ce qui change tout, c’est le développement des personnages et de l'histoire de ce monde grâce à des poèmes et des chants qui arrivent tout au long des livres. 
+                Après sa mort, c'est son fils Christopher, qui l'avait conseillé et aidé dans ses écrits, qui va publier d'autres œuvres de son père comme le Silmarillion. 
+                A savoir qu’il faut déjà de la patience et de la volonté pour lire le seigneur des anneaux à cause de la profondeur des textes qui du coup rendent la lecture longue, alors accrochez vous si vous vous lancez dans le Silmarillion car ce n'est pas seulement une histoire mais les récits de la création jusqu’à la fin de la Terre du milieu avec une quantité gigantesque de personnages et d’histoires complexes. 
+            </p>
+            <p class="page__article--texte">
+                Aujourd'hui encore ces livres sont une référence dans le monde de la fantaisie, des nouvelles éditions et traductions continues de sortir et ces livres ont entre autres inspiré Game of Thrones et Harry Potter.
+            </p>
+            <h2 class="page__header--chapo">
+                Voici les œuvres majeures qui composent son univers, qu'il a publié ou qui ont été publiées après sa mort par son fils Christopher:            
+            </h2>
+
+            <div 
+                class="carrousel"
+                x-data="{
+                            async parcLivre() {
+                                const resp = await fetch('/json/livres.json');
+                                return await resp.json();
+                            },
+                        },
+                        {hrefCourant: '#1'}">
+                <div class="carrousel__parent" x-for="info of parcLivre">
+                    <div class="carrousel__parent--ecran">
+
+                    </div>
+
+                </div>
+                
+            </div>
+
+            
+        </article>
 
     </main>
 
