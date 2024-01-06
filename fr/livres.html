@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/src/styles.css" />
     <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://unpkg.com/alpinejs" defer></script>
+
 </head>
 <body x-data="{expanded: false}" :class="{noscroll: expanded}">
 
@@ -133,7 +135,7 @@
             </h2>
         </header>
 
-        <article>
+        <article class="page__article">
             <img 
                 src="/public/img/tolkien.webp" 
                 alt="image J.R.R Tolkien"
@@ -178,24 +180,179 @@
                 Voici les œuvres majeures qui composent son univers, qu'il a publié ou qui ont été publiées après sa mort par son fils Christopher:            
             </h2>
 
-            <div 
-                class="carrousel"
-                x-data="{
-                            async parcLivre() {
-                                const resp = await fetch('/json/livres.json');
-                                return await resp.json();
-                            },
-                        },
-                        {hrefCourant: '#1'}">
-                <div class="carrousel__parent" x-for="info of parcLivre">
-                    <div class="carrousel__parent--ecran">
 
+
+            <div class="carrousel" x-data="{hrefCourant: '#ecran-1'}">
+                <div 
+                    class="carrousel__parent"
+                    x-ref="parent"
+                    @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id"
+                    >
+                    
+                    <div id="ecran-1" class="carrousel__parent--ecran">
+                        <figure class="fig">
+                            <img src="/public/img/livre_hobbit.webp" alt="livre hobbit" class="fig__img">
+                            
+                            <figcaption class="fig__figcaption">
+                                <p class="fig__figcaption--texte">
+                                    Le Hobbit
+                                </p>
+                                <p class="fig__figcaption--texte">
+                                    1937
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div id="ecran-2" class="carrousel__parent--ecran">
+                        <figure class="fig">
+                            <img src="/public/img/livre_lotr.webp" alt="livre seigneur des anneaux" class="fig__img">
+                            <figcaption class="fig__figcaption">
+                                <p class="fig__figcaption--texte">
+                                    Le seigneur des anneaux
+                                </p>
+                                <p class="fig__figcaption--texte">
+                                    1954-1955
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div id="ecran-3" class="carrousel__parent--ecran">
+                        <figure class="fig">
+                            <img src="/public/img/livre_silmarillion.webp" alt="livre silmarillion" class="fig__img">
+                            <figcaption class="fig__figcaption">
+                                <p class="fig__figcaption--texte">
+                                    Le Silmarillion
+                                </p>
+                                <p class="fig__figcaption--texte">
+                                    1977
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div id="ecran-4" class="carrousel__parent--ecran">
+                        <figure class="fig">
+                            <img src="/public/img/livre_contes_inacheves.webp" alt="livre contes inachevés" class="fig__img">
+                            <figcaption class="fig__figcaption">
+                                <p class="fig__figcaption--texte">
+                                    Contes et légendes inachevés
+                                </p>
+                                <p class="fig__figcaption--texte">
+                                    1980
+                                </p>
+                            </figcaption> 
+                        </figure>
+                    </div>
+
+                    <div id="ecran-5" class="carrousel__parent--ecran">
+                        <figure class="fig">
+                            <img src="/public/img/livre_enfant_hurin.webp" alt="livre enfant de hurin" class="fig__img">
+                            <figcaption class="fig__figcaption">
+                                <p class="fig__figcaption--texte">
+                                    Les enfants de Hurin
+                                </p>
+                                <p class="fig__figcaption--texte">
+                                    2007
+                                </p>
+                            </figcaption>                                
+                        </figure>
+                    </div>
+
+                    <div id="ecran-6" class="carrousel__parent--ecran">
+                        <figure class="fig">
+                            <img src="/public/img/livre_beren_luthien.webp" alt="livre beren et luthien" class="fig__img">
+                            <figcaption class="fig__figcaption">
+                                <p class="fig__figcaption--texte">
+                                    Beren et Luthien
+                                </p>
+                                <p class="fig__figcaption--texte">
+                                    2017
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div id="ecran-7" class="carrousel__parent--ecran">
+                        <figure class="fig">
+                            <img src="/public/img/livre_chute_gondolin.webp" alt="livre chute de gondolin" class="fig__img">
+                            <figcaption class="fig__figcaption">
+                                <p class="fig__figcaption--texte">
+                                    La chute de Gondolin
+                                </p>
+                                <p class="fig__figcaption--texte">
+                                    2018
+                                </p> 
+                            </figcaption>
+                        </figure>
                     </div>
 
                 </div>
-                
-            </div>
+                <ul class="caroussel__liste">
+                    <li>
+                        <a 
+                            href="#ecran-1" 
+                            class="carrousel__liste--lien"
+                            :class="{actif:hrefCourant==='#ecran-1'}">
+                            •
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="#ecran-2" 
+                            class="carrousel__liste--lien"
+                            :class="{actif:hrefCourant==='#ecran-2'}">
+                            •
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="#ecran-3"                             
+                            class="carrousel__liste--lien"
+                            :class="{actif:hrefCourant==='#ecran-3'}">
+                            •
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="#ecran-4"
+                            class="carrousel__liste--lien"
+                            :class="{actif:hrefCourant==='#ecran-4'}">
+                            •
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="#ecran-5" 
+                            class="carrousel__liste--lien"
+                            :class="{actif:hrefCourant==='#ecran-5'}">
+                            •
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="#ecran-6" 
+                            class="carrousel__liste--lien"
+                            :class="{actif:hrefCourant==='#ecran-6'}">
+                            •
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="#ecran-7"
+                            class="carrousel__liste--lien"
+                            :class="{actif:hrefCourant==='#ecran-7'}">
+                            •
+                        </a>
+                    </li>
+                </ul>
+            </div>    
 
+            <a href="/fr/anecdotes.html" class="page__article--btn">
+                Quelques anecdotes
+                <img src="/public/icones/chevron_right.svg" alt="fleche">
+            </a>
             
         </article>
 

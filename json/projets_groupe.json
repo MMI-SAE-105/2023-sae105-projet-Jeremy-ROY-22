@@ -1,0 +1,107 @@
+[
+    {
+        "img":"/public/img/0_skyfall.webp",
+        "alt":"affiche skyfall",
+        "projet":"My name is Bond, James Bond ",
+        "Nom": "LIEGEON",
+        "Prenom" : "Mathis",
+        "href":""
+    },
+    {
+        "img":"/public/img/1_oppenheimer.webp",
+        "alt":"affiche oppenheimer",
+        "projet":"OppenMind",
+        "Nom": "YILMAZ",
+        "Prenom" : "Kalan",
+        "href":""
+    },
+    {
+        "img":"/public/img/2_ligne_verte.webp",
+        "alt":"affiche la ligne verte",
+        "projet":"The long line ",
+        "Nom": "BOSETTI ",
+        "Prenom" : "Angelo",
+        "href":""
+    },
+    {
+        "img":"/public/img/3_vague.webp",
+        "alt":"affiche la vague",
+        "projet":"Abyssal Wave",
+        "Nom": "CHARASSE",
+        "Prenom" : "Samuel",
+        "href":""
+    },
+    {
+        "img":"/public/img/4_spider_verse.webp",
+        "alt":"affiche spider verse",
+        "projet":"Across the spider-web",
+        "Nom": "DAMAGE",
+        "Prenom" : "Ryane",
+        "href":""
+    },
+    {
+        "img":"/public/img/5_labyrinthe.webp",
+        "alt":"affiche le labyrinthe",
+        "projet":"Ton avenir est entre tes mains",
+        "Nom": " GUYOT",
+        "Prenom" : "Liloue",
+        "href":""
+    },
+    {
+        "img":"/public/img/6_roi_lion.webp",
+        "alt":"affiche le roi lion",
+        "projet":"Hakuna Matata ",
+        "Nom": "KEBAILI",
+        "Prenom" : "Tasnim",
+        "href":""
+    },
+    {
+        "img":"/public/img/7_princesse_mononoke.webp",
+        "alt":"affiche princesse mononoke",
+        "projet":"Unclouded by hate",
+        "Nom": "QERCHI",
+        "Prenom" : "Imrane",
+        "href":""
+    },
+    {
+        "img":"/public/img/8_kill_bill.webp",
+        "alt":"affiche kill bill",
+        "projet":"Kill this rabbit",
+        "Nom": "PAUTRAT",
+        "Prenom" : "Marion",
+        "href":""
+    },
+    {
+        "img":"/public/img/9_dark_knight.webp",
+        "alt":"affiche the dark knight",
+        "projet":"Why so serious",
+        "Nom": "MARTINEZ",
+        "Prenom" : "Logan",
+        "href":""
+    },
+    {
+        "img":"/public/img/10_oppenheimer.webp",
+        "alt":"affiche oppenheimer",
+        "projet":"Oppenheimer",
+        "Nom": "MORETTI",
+        "Prenom" : "Tony",
+        "href":""
+    },
+    {
+        "img":"/public/img/11_pianiste.webp",
+        "alt":"affiche le pianiste",
+        "projet":"Le Pianiste",
+        "Nom": "GACHOD",
+        "Prenom" : "",
+        "href":""
+    },
+    {
+        "img":"/public/img/12_barbie.webp",
+        "alt":"affiche barbie",
+        "projet":"Barbie",
+        "Nom": "THAMILSELVAN",
+        "Prenom" : "Oliventhan",
+        "href":""
+    }
+
+]

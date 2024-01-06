@@ -123,16 +123,55 @@
    
     <main class="page">
         <header class="page__header">
-            <img src="/public/img/" alt="image trou de hobbit">
+            <img src="/public/img/accueil.webp" alt="image trou de hobbit">
             <h1 class="page__header--titre">
-                # Titre Article #
+                Contact
             </h1>
             <h2 class="page__header--chapo">
-                # chapo #
+                Si vous avez des questions, des suggestions à partager, où si vous avez remarqué une erreur, n’hésitez pas à nous contacter, nous serons ravi de vous répondre.
             </h2>
         </header>
-
-        <!-- suite du la page -->
+        <form class="form" action="#">
+            <div class="form__element">
+                <input 
+                    type="text" 
+                    id="nom" 
+                    name="nom" 
+                    placeholder="Nom*"
+                    class="form__element--input" 
+                    required>
+            </div>
+            <div class="form__element">
+                <input 
+                    type="text" 
+                    id="prenom" 
+                    name="prenom" 
+                    placeholder="Prénom*"
+                    class="form__element--input" 
+                    required>
+            </div>
+            <div class="form__element">
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="Email*"
+                    class="form__element--input" 
+                    required>
+            </div>
+            <div class="form__element">
+                <textarea 
+                    name="message" 
+                    id="message" 
+                    placeholder="Message*"
+                    rows="5" 
+                    class="form__element--input" 
+                    required></textarea>
+            </div>
+            <button type="submit" class="form__element--bouton">
+                Envoyer
+            </button>            
+        </form>
 
     </main>
 

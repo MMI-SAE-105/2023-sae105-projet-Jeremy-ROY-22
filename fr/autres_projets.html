@@ -123,16 +123,47 @@
    
     <main class="page">
         <header class="page__header">
-            <img src="/public/img/" alt="image trou de hobbit">
-            <h1 class="page__header--titre">
-                # Titre Article #
+            <img src="/public/img/accueil.webp" alt="image trou de hobbit">
+            <h1 class="page__header--titre ">
+                Autres projets
             </h1>
-            <h2 class="page__header--chapo">
-                # chapo #
+            <h2 class="page__header--chapo space__chapo">
+                Si vous avez aimé ce site, nous vous proposons d’autres sites réalisés par les élèves du groupe sur le même thème
             </h2>
         </header>
 
-        <!-- suite du la page -->
+        <article class="page__article">
+            <div 
+                class="projets"
+                x-data="{
+                    async infos_projet() {
+                        const resp = await fetch('/json/projets_groupe.json');
+                    return await resp.json();
+                    },
+                }">
+                <template
+                    class="gallery__template"
+                    x-for="infos of infos_projet">
+                    <div class="projet__block">
+                        <img 
+                            :src="infos.img" 
+                            :alt="infos.alt"
+                            class="projet__block--img">
+                        <div class="projet__block--infos">
+                            <h3 class="projet__block--titre" x-text="infos.projet">Nom du projet</h3>
+                            <p class="projet__block--eleve" x-text="infos.Nom">Nom</p>
+                            <p class="projet__block--eleve" x-text="infos.Prenom">Prénom</p>
+                            <a 
+                                :href="infos.href"
+                                class="projet__block--lien">
+                                Lire
+                            </a>
+                        </div>
+                    </div>
+                </template>
+            </div>
+
+        </article>
 
     </main>
 
