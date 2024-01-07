@@ -25,7 +25,7 @@
 }
 
 .menu__croix{
-    width: 80px;
+    width: 50px;
 }
 
 
@@ -33,32 +33,26 @@
     right: 0;
 }
 
-nav > ul > li{
-    list-style: none;    
-}
-
-nav > ul > li > a {
-    list-style: none;  
-    color: white;
-    font-family: "";
-}
 
 .menu__liste{
     padding-top: 10px;
-    padding-left: 0;
+    padding-left: 30px;
+    padding-right: 80px;
 }
 
 .menu__page{
-    font-size: var(--menu-h1);
-    padding-left: 20px;
-    padding-bottom: 0;
-    padding-top: 10px;
+    font-size:20px ;
+    padding-bottom: 8px;
+    padding-top: 20px;
     margin-bottom: 10px;
+    border-bottom: 1px solid var(--blanc);
 }
 
 
 .menu__page--lien{
-    
+    list-style: none;  
+    color: white;
+    font-family: var(--font-titre);
 }
 
 .noscroll{
