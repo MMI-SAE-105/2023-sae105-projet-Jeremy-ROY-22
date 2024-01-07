@@ -1,0 +1,15 @@
+:root {
+    /* Colors */
+    --noir: rgb(0, 0, 0) ;
+    --blanc: rgb(255, 255, 255) ;
+    --orange: #FF6600;
+    --vert: #15500C;
+
+    /* Fonts */
+    --font-texte: 'Futura BK BT';
+    --font-titre: 'Ringbearer';
+
+    /* Font sizes */
+    --font-h1: 30px;
+    
+}

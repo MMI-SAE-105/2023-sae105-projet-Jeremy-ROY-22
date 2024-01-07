@@ -1,0 +1,34 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-texte);
+    font-size: var(--font-ringbearer);
+    background-color: var(--noir);
+    color: var(--blanc);
+    margin: 0;
+}
+
+.main {
+    color: var(--blanc);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-family: var(--font-titre);
+}
