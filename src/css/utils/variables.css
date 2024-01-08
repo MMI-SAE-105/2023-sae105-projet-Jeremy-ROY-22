@@ -5,6 +5,7 @@
     --orange: #FF6600;
     --vert: #15500C;
     --gris: rgb(194, 194, 194);
+    --gris-galerie: rgb(61, 61, 61);
 
     /* Fonts */
     --font-texte: 'Futura BK BT';
@@ -18,5 +19,6 @@
     
     /* autres */
     --ligne-width: 200px;
-    --margin-cote: 20px;
+    --margin-cote: 30px;
+    --margin-h2: 20px;
 }

@@ -8,8 +8,8 @@
 
 .page__header--chapo {
     font-weight: normal;
-    margin-left:var(--margin-cote);
-    margin-right:var(--margin-cote);
+    margin-left:var(--margin-h2);
+    margin-right:var(--margin-h2);
     margin-bottom: 20px;
     font-size: var(--size-h2);
 }
@@ -63,5 +63,16 @@
 .page__article--liste {
     margin-right: 20px;
     font-size: var(--size-texte);
+}
+
+.citation {
+    margin:-7px 40px 20px 30px;
+    border-left: 2px solid var(--orange);
+    padding-left: 10px;
+    font-style: italic;
+}
+
+.citation__auteur {
+    margin-bottom:0 ;
 }
 

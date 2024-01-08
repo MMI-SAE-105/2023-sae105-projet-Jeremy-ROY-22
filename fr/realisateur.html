@@ -150,7 +150,7 @@
                 Résultat ? 17 Oscars, 11 pour le troisième film ce qui fait de lui un des trois films les plus oscarisés au monde avec Ben-Hur et Titanic. Suite à cette réussite, il va continuer à réaliser et produire de grands films, avec les plus grands réalisateurs et les plus grands acteurs comme Steven Spielberg et Adrien Brody. Il va aussi réaliser la trilogie du Hobbit, aussi un énorme succès mais un peu moins appréciée par les fans pour les trop grosses libertées prises par rapport au livre. Ce qui n'enlève rien à son immense talent.            
             </p>
             <h2 class="page__header--chapo">
-                Voici donc un résumé de ses films les plus connus, qu'il soit réalisateur ou producteur :            
+                Voici donc un résumé de ses films les plus connus, qu'il soit réalisateur ou producteur           
             </h2>
             <div class="gallerie" x-data="{
                 async parcFilm () {
@@ -168,16 +168,14 @@
                                 :alt="info.alt">
                         </a>
                         <div class="gallerie__description">
-                            <div>
-                                <p class="gallerie__description--texte">Film :</p>
-                                <span class="gallerie__description--texte" x-text="info.film">Titre Film</span>
-                                <p class="gallerie__description--texte">Date :</p>
-                                <span class="gallerie__description--texte" x-text="info.date">Date de sortie</span>
-                                <p class="gallerie__description--texte">Réalisateur :</p>
-                                <span class="gallerie__description--texte" x-text="info.realisateur">Réalisateur</span>
-                                <p class="gallerie__description--texte">Producteur :</p>
-                                <span class="gallerie__description--texte" x-text="info.producteur">Producteur</span>
-                            </div>
+                                <p class="gallerie__description--titre">Film :</p>
+                                <p class="gallerie__description--texte" x-text="info.film">Titre Film</p>
+                                <p class="gallerie__description--titre">Date :</p>
+                                <p class="gallerie__description--texte" x-text="info.date">Date de sortie</p>
+                                <p class="gallerie__description--titre">Réalisateur :</p>
+                                <p class="gallerie__description--texte" x-text="info.realisateur">Réalisateur</p>
+                                <p class="gallerie__description--titre">Producteur :</p>
+                                <p class="gallerie__description--texte" x-text="info.producteur">Producteur</p>
                         </div>
                     </div>
                 </template>

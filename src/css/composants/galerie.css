@@ -1,0 +1,34 @@
+.gallerie {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-left: var(--margin-h2);
+    margin-right: var(--margin-h2);
+}
+
+.gallerie__contenu {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.gallerie__description {
+    height: 220px;
+    font-size: var(--size-texte);
+    background-color: var(--gris-galerie);
+    border-top: 2px solid var(--blanc);
+    margin-top: -4px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.gallerie__description--texte {
+    margin-top: 0;
+}
+
+.gallerie__description--titre {
+    margin: 0;
+}
+
+
+
+
