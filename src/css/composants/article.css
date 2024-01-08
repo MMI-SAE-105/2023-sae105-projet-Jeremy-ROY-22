@@ -56,3 +56,12 @@
 
 }
 
+.liste__chiffres {
+    margin-top: 0;
+}
+
+.page__article--liste {
+    margin-right: 20px;
+    font-size: var(--size-texte);
+}
+
