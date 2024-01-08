@@ -5,6 +5,8 @@
 /* composants */
 @import "/src/css/composants/carrousel.css";
 @import "/src/css/composants/media.css";
+@import "/src/css/composants/article.css";
+@import "/src/css/composants/index.css";
 
 /* layout */
 @import "/src/css/layout/header.css";

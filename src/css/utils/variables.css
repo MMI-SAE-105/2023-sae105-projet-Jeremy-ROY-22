@@ -4,12 +4,19 @@
     --blanc: rgb(255, 255, 255) ;
     --orange: #FF6600;
     --vert: #15500C;
+    --gris: rgb(194, 194, 194);
 
     /* Fonts */
     --font-texte: 'Futura BK BT';
     --font-titre: 'Ringbearer';
 
     /* Font sizes */
-    --font-h1: 30px;
+    --size-h1: 30px;
+    --size-h2: 18px;
+    --size-texte: 15px;
+    --size-descriptif: 12px;
     
+    /* autres */
+    --ligne-width: 200px;
+    --margin-cote: 20px;
 }

@@ -58,13 +58,7 @@
                         <a 
                             class="menu__page--lien"
                             href="/fr/films.html">
-                            Le seigneur des anneaux
-                        </a>
-                        <br>
-                        <a 
-                            class="menu__page--lien"
-                            href="/fr/films.html">
-                            films
+                            Le seigneur des anneaux Films
                         </a>
                     </li>
                     <li class="menu__page">
@@ -85,13 +79,7 @@
                         <a 
                             href="/fr/livres.html"
                             class="menu__page--lien">
-                            Le seigneur des anneaux
-                        </a>
-                        <br>
-                        <a 
-                            href="/fr/livres.html"
-                            class="menu__page--lien">
-                            Livres
+                            Le seigneur des anneaux Livres
                         </a>
                     </li>
                     <li class="menu__page">
@@ -103,14 +91,14 @@
                     </li>
                     <li class="menu__page">
                         <a 
-                            href="/fr/livres.html"
+                            href="/fr/memes.html"
                             class="menu__page--lien">
                             Memes                      
                         </a>
                     </li>
                     <li class="menu__page">
                         <a 
-                            href="/fr/livres.html"
+                            href="/fr/differences.html"
                             class="menu__page--lien">
                             Différences livres / films                        
                         </a>
@@ -125,56 +113,57 @@
    
     <main class="page">
         <header class="page__header">
-            <img src="/public/img/accueil.webp" alt="image trou de hobbit">
+            <img src="/public/img/accueil.webp" alt="image trou de hobbit" class="page__header--img">
             <h1 class="page__header--titre">
                 Contact
-            </h1>
+            </h1>          
+        </header>
+        <article class="page__article">
             <h2 class="page__header--chapo">
                 Si vous avez des questions, des suggestions à partager, où si vous avez remarqué une erreur, n’hésitez pas à nous contacter, nous serons ravi de vous répondre.
             </h2>
-        </header>
-        <form class="form" action="#">
-            <div class="form__element">
-                <input 
-                    type="text" 
-                    id="nom" 
-                    name="nom" 
-                    placeholder="Nom*"
-                    class="form__element--input" 
-                    required>
-            </div>
-            <div class="form__element">
-                <input 
-                    type="text" 
-                    id="prenom" 
-                    name="prenom" 
-                    placeholder="Prénom*"
-                    class="form__element--input" 
-                    required>
-            </div>
-            <div class="form__element">
-                <input 
-                    type="email" 
-                    id="email" 
-                    name="email" 
-                    placeholder="Email*"
-                    class="form__element--input" 
-                    required>
-            </div>
-            <div class="form__element">
-                <textarea 
-                    name="message" 
-                    id="message" 
-                    placeholder="Message*"
-                    rows="5" 
-                    class="form__element--input" 
-                    required></textarea>
-            </div>
-            <button type="submit" class="form__element--bouton">
-                Envoyer
-            </button>            
-        </form>
-
+            <form class="form" action="#">
+                <div class="form__element">
+                    <input 
+                        type="text" 
+                        id="nom" 
+                        name="nom" 
+                        placeholder="Nom*"
+                        class="form__element--input" 
+                        required>
+                </div>
+                <div class="form__element">
+                    <input 
+                        type="text" 
+                        id="prenom" 
+                        name="prenom" 
+                        placeholder="Prénom*"
+                        class="form__element--input" 
+                        required>
+                </div>
+                <div class="form__element">
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="Email*"
+                        class="form__element--input" 
+                        required>
+                </div>
+                <div class="form__element">
+                    <textarea 
+                        name="message" 
+                        id="message" 
+                        placeholder="Message*"
+                        rows="5" 
+                        class="form__element--input" 
+                        required></textarea>
+                </div>
+                <button type="submit" class="form__element--bouton">
+                    Envoyer
+                </button>            
+            </form>
+        </article>
     </main>
 
     <footer class="footer">
@@ -237,17 +226,17 @@
             </li>
             <li class="footer__reseau--lien">
                 <a href="https://instagram.com/jerem_roy?igshid=OGQ5ZDc2ODk2ZA==">
-                    <img src="/public/icones/instagram.svg" alt="logo instagram" class="footer reseau--image">
+                    <img src="/public/icones/instagram.svg" alt="logo instagram" class="footer__reseau--image">
                 </a>
             </li>
             <li class="footer__reseau--lien">
                 <a href="">
-                    <img src="/public/icones/git.svg" alt="logo git hub" class="footer reseau--image">
+                    <img src="/public/icones/git.svg" alt="logo git hub" class="footer__reseau--image">
                 </a>
             </li>
             <li class="footer__reseau--lien">
                 <a href="https://mmi-montbeliard.nathanvanbignootvincler.fr/">
-                    <img src="/public/icones/logo_mmi.png" alt="logo mmi" class="footer reseau--image">
+                    <img src="/public/icones/logo_mmi.png" alt="logo mmi" class="footer__reseau--image">
                 </a>
             </li>
         </ul>
