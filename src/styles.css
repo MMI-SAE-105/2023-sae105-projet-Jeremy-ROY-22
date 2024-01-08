@@ -8,6 +8,7 @@
 @import "/src/css/composants/article.css";
 @import "/src/css/composants/index.css";
 @import "/src/css/composants/galerie.css";
+@import "/src/css/composants/boutons.css";
 
 /* layout */
 @import "/src/css/layout/header.css";

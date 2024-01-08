@@ -2,3 +2,18 @@ img {
     width: 100%;
     height: auto;
 }
+
+.media__descriptif {
+    margin: 0;
+    margin-top: 5px;
+    font-size: var(--size-descriptif);
+    font-style: italic;
+    color: var(--gris);
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    
+}

@@ -24,14 +24,6 @@
     margin-top: 20px;
 }
 
-.media__descriptif {
-    margin: 0;
-    margin-top: 5px;
-    font-size: var(--size-descriptif);
-    font-style: italic;
-    color: var(--gris);
-}
-
 .page__article--texte {
     margin-left:var(--margin-cote);
     margin-right:var(--margin-cote);
@@ -39,22 +31,6 @@
     line-height: 1.4;
 }
 
-.page__article--btn {
-    display: flex;
-    font-size: var(--size-h2);
-    color: var(--orange);
-    border: 1px solid var(--blanc);
-    border-radius: 50px;
-    align-items: center;
-    padding: 0px 0px 0px 10px;
-    margin-top: 40px;
-}
-
-.page__article--btn img{
-    width: 30px;
-    height: 30px;
-
-}
 
 .liste__chiffres {
     margin-top: 0;
