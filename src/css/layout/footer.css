@@ -41,7 +41,7 @@
 
 .footer__infos {
     margin: var(--margin-cote);
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: var(--size-h2);
     color: var(--orange);
 }
