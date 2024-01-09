@@ -16,9 +16,14 @@
     padding: 0px 10px 10px 10px;
 }
 
+.meme__box--img {
+    border-bottom: 1px solid var(--blanc);
+}
+
 .box__texte--fact {
     margin: 0;
     margin-top: 10px;
+    font-size: var(--size-texte);
 }
 
 /* box memes */
