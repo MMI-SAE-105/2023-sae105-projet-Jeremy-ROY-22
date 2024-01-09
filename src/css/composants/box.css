@@ -8,7 +8,7 @@
 
 .box__texte {
     background-color: var(--gris-galerie);
-    border-top: 2px solid var(--gris);
+    border-top: 2px solid var(--blanc);
     margin-top: -4px;
     width: auto;
     padding: 0px 10px 10px 10px;
