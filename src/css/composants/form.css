@@ -1,0 +1,27 @@
+.form {
+    margin-top: 20px;
+}
+
+.form__element {
+    margin: 10px 20px 20px 0px;
+}
+
+.form__element--input {
+    width: 300px;
+    padding: 5px;
+    border: none;
+    font-family: var(--font-texte);
+    font-size: var(--size-h2);
+    background-color: var(--gris);
+}
+
+.form__element--bouton {
+    padding: 5px 10px;
+    border: none;
+    color: var(--orange);
+    font-family: var(--font-texte);
+    font-size: var(--size-h2);
+    background-color: transparent;
+    border: 1px solid var(--blanc);
+    border-radius: 50px;
+}

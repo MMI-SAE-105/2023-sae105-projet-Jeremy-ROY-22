@@ -10,6 +10,9 @@
 @import "/src/css/composants/galerie.css";
 @import "/src/css/composants/boutons.css";
 @import "/src/css/composants/box.css";
+@import "/src/css/composants/form.css";
+@import "/src/css/composants/glossaire.css";
+@import "/src/css/composants/projets.css";
 
 /* layout */
 @import "/src/css/layout/header.css";

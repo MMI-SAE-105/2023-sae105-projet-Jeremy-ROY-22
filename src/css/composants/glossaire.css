@@ -1,0 +1,12 @@
+.glossaire {
+    margin: 10px 20px 0 20px;
+}
+
+.glossaire__mot {
+    margin-bottom: 5px;
+}
+
+.glossaire__def {
+    margin-bottom: 25px;
+    margin-left: 30px;
+}
