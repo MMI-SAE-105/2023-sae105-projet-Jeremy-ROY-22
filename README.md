@@ -1,8 +1,8 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/OLLHpiQA)
 - NOM : Roy
 - PRÉNOM : Jérémy
-- URL du site :
-- URL FIGMA :
+- URL du site : https://mordors-direction.j-roy.fr/
+- URL FIGMA : https://www.figma.com/file/u8nlCzHkoE2I5HzPOZfDA3/Maquettes-projet-individuel-%E2%80%94-J%C3%A9r%C3%A9my-ROY?type=design&node-id=1968%3A1260&mode=design&t=OXDC6DwvnoWOCGiM-1
 
 # Structure de départ pour le projet individuel.
 
