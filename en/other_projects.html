@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other_projects</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body x-data="{expanded: false}" :class="{noscroll: expanded}">
+    
+    <header class="header">
+        <div class="header__bande">
+            <a href="/en/index.html">
+                <img 
+                    src="/public/icones/logo_site.svg" 
+                    alt="logo mordor"
+                    class="header__bande--logo">
+            </a>
+        </div>
+        <div class="header__bande">
+            <a href="/fr/index.html" class="header__bande--langue">
+                fr
+            </a>
+        </div>
+        <div class="header__bande">
+            <img 
+                class="header__bande--icone"
+                src="/public/icones/menu.svg"  
+                alt="logo menu"
+                @click="expanded = ! expanded">
+
+            <nav class="header__menu menu" :class="{actif: expanded}">
+                <div class="menu__haut">
+                    <a href="/fr/index.html">
+                        <img 
+                            src="/public/icones/logo_site.svg" 
+                            alt="logo site"
+                            class="menu__logo">
+                    </a>
+                    <img 
+                        class="menu__croix" 
+                        src="/public/icones/croix.svg" 
+                        alt="icone close menu cross"
+                        @click="expanded = ! expanded">
+                </div>
+                <ul class="menu__liste">
+                    <li class="menu__page">
+                        <a 
+                            href="/en/line.html"
+                            class="menu__page--lien">
+                            Mordor Gandalf, is it left or right ?
+                        </a>
+                    </li>
+                    <li class="menu__page">
+                        <a 
+                            class="menu__page--lien"
+                            href="/en/films.html">
+                            Lord of the Rings Films                        
+                        </a>
+                    </li>
+                    <li class="menu__page">
+                        <a 
+                            href="/en/director.html"
+                            class="menu__page--lien">
+                            Peter Jackson
+                        </a>
+                    </li>
+                    <li class="menu__page">
+                        <a 
+                            href="/en/music.html"
+                            class="menu__page--lien">
+                            The shire
+                        </a>
+                    </li>
+                    <li class="menu__page">
+                        <a 
+                            href="/en/books.html"
+                            class="menu__page--lien">
+                            Lord of the Rings Books
+                        </a>
+                    </li>
+                    <li class="menu__page">
+                        <a 
+                            href="/en/fun_facts.html"
+                            class="menu__page--lien">
+                            Fun-Facts
+                        </a>
+                    </li>
+                    <li class="menu__page">
+                        <a 
+                            href="/en/meme.html"
+                            class="menu__page--lien">
+                            Memes                      
+                        </a>
+                    </li>
+                    <li class="menu__page">
+                        <a 
+                            href="/en/differences.html"
+                            class="menu__page--lien">
+                            Differences books / films                       
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
