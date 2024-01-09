@@ -1,3 +1,5 @@
+/* box anecdote + différences livres/films */
+
 .box {
     margin: 0px 15px 40px 15px;
 }
@@ -8,7 +10,7 @@
 
 .box__texte {
     background-color: var(--gris-galerie);
-    border-top: 2px solid var(--blanc);
+    border-top: 2px solid var(--gris);
     margin-top: -4px;
     width: auto;
     padding: 0px 10px 10px 10px;
@@ -17,4 +19,14 @@
 .box__texte--fact {
     margin: 0;
     margin-top: 10px;
+}
+
+/* box memes */
+
+.meme__box {
+    margin: 20px 15px 40px 15px;
+}
+
+.meme__box--trad {
+    margin: 0px 15px 8px 20px;
 }
