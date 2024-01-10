@@ -107,6 +107,240 @@
         </div>
     </header>
 
+    <main class="page">
+        <header class="page__header">
+            <img src="/public/img/accueil.webp" alt="image hobbit hole" class="page__header--img">
+            <h1 class="page__header--titre">
+                The Lord of the Rings
+                Books 
+            </h1>        
+        </header>
+
+        <article class="page__article">
+            <h2 class="page__header--chapo">
+                The epic world of the "Lord of the Rings" books, but also the man behind the magic            
+            </h2>
+            <img 
+                src="/public/img/tolkien.webp" 
+                alt="image J.R.R Tolkien"
+                class="page__article--image">
+            <p class="media__descriptif">J.R.R Tolkien</p>
+            <h2 class="page__header--chapo">
+                Before we look at the books, we need to know a little more about their author: J.R.R Tolkien.  
+            </h2>
+            <p class="page__article--texte">
+                J.R.R Tolkien, full name : 
+                John Ronald Reuel Tolkien, 
+                is considered one of the greatest writers of fantasy thanks to "The Lord of the Rings" and all the other books that evolve in the same world he created : Middle-earth. 
+            </p>
+            <p class="page__article--texte">
+                He was born in 1892 in South Africa, where he grew up before moving to England at the age of 3. From an early age he was interested in languages and invented his own for his own pleasure. 
+                During his years at Oxford, he developed an interest in writing and also illustrated his writings for pleasure. After the First World War, he became a teacher of English in Leeds and then of Old English in Oxford. During the second half of his life, he wrote and improved his world with drafts and finished works that he published. It was on the advice of his friends that he published The Hobbit in 1937, which quickly became a great success. The public demanded a sequel, and he later released The Lord of the Rings. 
+                After his death, his son Christopher, who had helped and advised him in his writing, brought together and finished his father's various drafts and writings and turned them into books that he published.
+            </p>
+            <img 
+                src="/public/img/livre_frise.webp" 
+                alt="books hobbit + seigneur des anneaux"
+                class="page__article--image">
+            <p class="media__descriptif">His 4 best-known books</p>
+            <h2 class="page__header--chapo">
+                The epic world of the Lord of the Rings 
+                and its history           
+            </h2>
+            <p class="page__article--texte">
+                The success of this universe was made possible by the release of The Hobbit in 1937, which gave a taste of all the talent, genius and infinite possibilities of Tolkien and his world, even though it was only a children's novel. 
+                He then went on to clean up his texts and published The Lord of the Rings in three parts in 54 and 55. The book was even better received than The Hobbit for its depth, its complexity, the beauty of the writing and its fascinating story. 
+                The world in which the story unfolds is astonishingly rich and varied, with detailed explanations and maps drawn by Tolkien himself. 
+            </p>
+            <p class="page__article--texte">
+                The story is simple, with heroes, a quest and a great villain. What changes everything is the development of the characters and the history of this world through the poems and songs that appear throughout the books. 
+                After his death, his son Christopher, who had advised and helped him with his writing, published other works by his father, such as The Silmarillion. 
+                It's worth noting that you already need patience and willpower to read The Lord of the Rings because of the depth of the texts, which makes for a long read, so hang on if you're going to tackle The Silmarillion, because it's not just a story, but the tales from creation to the end of Middle-earth, with a huge number of characters and complex stories. 
+            </p>
+            <p class="page__article--texte">
+                Even today, these books are a benchmark in the world of fantasy, with new editions and translations being published all the time, and the books have inspired Game of Thrones and Harry Potter, among others.
+            </p>
+            <h2 class="page__header--chapo">
+                Here are the major works that make up his universe, which he published or which were published after his death by his son Christopher :            
+            </h2>
+
+
+
+            <div class="carrousel" x-data="{hrefCourant: '#ecran-1'}">
+                <div 
+                    class="carrousel__parent"
+                    x-ref="parent"
+                    @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id"
+                    >
+                    
+                    <div id="ecran-1" class="carrousel__parent--ecran">
+                        <figure class="fig">
+                            <img src="/public/img/livre_hobbit.webp" alt="book hobbit" class="fig__img">
+                            
+                            <figcaption class="fig__figcaption">
+                                <p class="fig__figcaption--texte">
+                                    The Hobbit
+                                </p>
+                                <p class="fig__figcaption--texte">
+                                    1937
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div id="ecran-2" class="carrousel__parent--ecran">
+                        <figure class="fig">
+                            <img src="/public/img/livre_lotr.webp" alt="book lord of the rings" class="fig__img">
+                            <figcaption class="fig__figcaption">
+                                <p class="fig__figcaption--texte">
+                                    The Lord of the Rings
+                                </p>
+                                <p class="fig__figcaption--texte">
+                                    1954-1955
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div id="ecran-3" class="carrousel__parent--ecran">
+                        <figure class="fig">
+                            <img src="/public/img/livre_silmarillion.webp" alt="book silmarillion" class="fig__img">
+                            <figcaption class="fig__figcaption">
+                                <p class="fig__figcaption--texte">
+                                    The Silmarillion
+                                </p>
+                                <p class="fig__figcaption--texte">
+                                    1977
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div id="ecran-4" class="carrousel__parent--ecran">
+                        <figure class="fig">
+                            <img src="/public/img/livre_contes_inacheves.webp" alt="book unfinished tales" class="fig__img">
+                            <figcaption class="fig__figcaption">
+                                <p class="fig__figcaption--texte">
+                                    Unfinished tales and legends
+                                </p>
+                                <p class="fig__figcaption--texte">
+                                    1980
+                                </p>
+                            </figcaption> 
+                        </figure>
+                    </div>
+
+                    <div id="ecran-5" class="carrousel__parent--ecran">
+                        <figure class="fig">
+                            <img src="/public/img/livre_enfant_hurin.webp" alt="book children of hurin" class="fig__img">
+                            <figcaption class="fig__figcaption">
+                                <p class="fig__figcaption--texte">
+                                    The childrens of hurin
+                                </p>
+                                <p class="fig__figcaption--texte">
+                                    2007
+                                </p>
+                            </figcaption>                                
+                        </figure>
+                    </div>
+
+                    <div id="ecran-6" class="carrousel__parent--ecran">
+                        <figure class="fig">
+                            <img src="/public/img/livre_beren_luthien.webp" alt="book beren and luthien" class="fig__img">
+                            <figcaption class="fig__figcaption">
+                                <p class="fig__figcaption--texte">
+                                    Beren and Luthien
+                                </p>
+                                <p class="fig__figcaption--texte">
+                                    2017
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div id="ecran-7" class="carrousel__parent--ecran">
+                        <figure class="fig">
+                            <img src="/public/img/livre_chute_gondolin.webp" alt="book fall of gondolin" class="fig__img">
+                            <figcaption class="fig__figcaption">
+                                <p class="fig__figcaption--texte">
+                                    The fall of Gondolin
+                                </p>
+                                <p class="fig__figcaption--texte">
+                                    2018
+                                </p> 
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+                <ul class="carrousel__liste">
+                    <li>
+                        <a 
+                            href="#ecran-1" 
+                            class="carrousel__liste--lien"
+                            :class="{actif:hrefCourant==='#ecran-1'}">
+                            •
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="#ecran-2" 
+                            class="carrousel__liste--lien"
+                            :class="{actif:hrefCourant==='#ecran-2'}">
+                            •
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="#ecran-3"                             
+                            class="carrousel__liste--lien"
+                            :class="{actif:hrefCourant==='#ecran-3'}">
+                            •
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="#ecran-4"
+                            class="carrousel__liste--lien"
+                            :class="{actif:hrefCourant==='#ecran-4'}">
+                            •
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="#ecran-5" 
+                            class="carrousel__liste--lien"
+                            :class="{actif:hrefCourant==='#ecran-5'}">
+                            •
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="#ecran-6" 
+                            class="carrousel__liste--lien"
+                            :class="{actif:hrefCourant==='#ecran-6'}">
+                            •
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="#ecran-7"
+                            class="carrousel__liste--lien"
+                            :class="{actif:hrefCourant==='#ecran-7'}">
+                            •
+                        </a>
+                    </li>
+                </ul>
+            </div>    
+
+            <a href="/fr/anecdotes.html" class="page__article--btn">
+                Some fun-facts
+                <img src="/public/icones/chevron_right.svg" alt="arrow">
+            </a>
+            
+        </article>
+
+    </main>
 
 
 
