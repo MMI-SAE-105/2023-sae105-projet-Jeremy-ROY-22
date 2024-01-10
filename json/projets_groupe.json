@@ -5,7 +5,7 @@
         "projet":"My name is Bond, James Bond ",
         "Nom": "LIEGEON",
         "Prenom" : "Mathis",
-        "href":""
+        "href":"https://allaboutskyfall.mathisliegeon.fr"
     },
     {
         "img":"/public/img/1_oppenheimer.webp",
@@ -13,7 +13,7 @@
         "projet":"OppenMind",
         "Nom": "YILMAZ",
         "Prenom" : "Kalan",
-        "href":""
+        "href":"https://oppenmind.kalan-yilmaz.fr"
     },
     {
         "img":"/public/img/2_ligne_verte.webp",
@@ -21,7 +21,7 @@
         "projet":"The long line ",
         "Nom": "BOSETTI ",
         "Prenom" : "Angelo",
-        "href":""
+        "href":"https://the-long-line.angelo-bosetti.fr"
     },
     {
         "img":"/public/img/3_vague.webp",
@@ -29,7 +29,7 @@
         "projet":"Abyssal Wave",
         "Nom": "CHARASSE",
         "Prenom" : "Samuel",
-        "href":""
+        "href":"https://abyssal-wave.scharasse.fr"
     },
     {
         "img":"/public/img/4_spider_verse.webp",
@@ -37,7 +37,7 @@
         "projet":"Across the spider-web",
         "Nom": "DAMAGE",
         "Prenom" : "Rayane",
-        "href":""
+        "href":"https://across-the-spider-web.rdamage.fr"
     },
     {
         "img":"/public/img/5_labyrinthe.webp",
@@ -45,7 +45,7 @@
         "projet":"Ton avenir est entre tes mains",
         "Nom": " GUYOT",
         "Prenom" : "Liloue",
-        "href":""
+        "href":"https://sae105-projet.lguyot.fr"
     },
     {
         "img":"/public/img/6_roi_lion.webp",
@@ -53,7 +53,7 @@
         "projet":"Hakuna Matata ",
         "Nom": "KEBAILI",
         "Prenom" : "Tasnim",
-        "href":""
+        "href":"https://hakuna-matata.kebaili-tasnim.fr"
     },
     {
         "img":"/public/img/7_princesse_mononoke.webp",
@@ -61,7 +61,7 @@
         "projet":"Unclouded by hate",
         "Nom": "QERCHI",
         "Prenom" : "Imrane",
-        "href":""
+        "href":"https://uncloudedbyhate.imrane-qerchi.fr"
     },
     {
         "img":"/public/img/8_kill_bill.webp",
@@ -77,7 +77,7 @@
         "projet":"Why so serious ?",
         "Nom": "MARTINEZ",
         "Prenom" : "Logan",
-        "href":""
+        "href":"http://soserious.logan-martinez.fr"
     },
     {
         "img":"/public/img/10_oppenheimer.webp",
@@ -85,7 +85,7 @@
         "projet":"Oppenheimer",
         "Nom": "MORETTI",
         "Prenom" : "Tony",
-        "href":""
+        "href":"https://oppenheimer.tonymoretti.fr"
     },
     {
         "img":"/public/img/11_pianiste.webp",
@@ -93,15 +93,15 @@
         "projet":"Le Pianiste",
         "Nom": "GACHOD",
         "Prenom" : "Pierre",
-        "href":""
+        "href":"https://lepianiste.pierre-gachod.fr"
     },
     {
         "img":"/public/img/12_barbie.webp",
         "alt":"affiche barbie",
-        "projet":"Barbie",
+        "projet":"Impossible to be her",
         "Nom": "THAMILSELVAN",
         "Prenom" : "Oliventhan",
-        "href":""
+        "href":"http://impossible-to-be-her.thamilselvan.fr"
     }
 
 ]
