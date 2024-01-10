@@ -108,6 +108,81 @@
     </header>
 
 
+    <main class="page">
+        <header class="page__header">
+            <img src="/public/img/accueil.webp" alt="image hobbit hole" class="page__header--img">
+            <h1 class="page__header--titre">
+                Peter Jackson
+            </h1>
+        </header>
+        <article class="page__article">
+            <h2 class="page__header--chapo">
+                We've mentioned it in other articles, but what would this cult saga have been without its director ?
+            </h2>
+            <img 
+                src="/public/img/peter_jackson.webp" 
+                alt="image Peter Jackson"
+                class="page__article--image">
+            <p class="media__descriptif">
+                Peter Jackson on the set
+            </p>
+            <p class="page__article--texte">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+                Born in New Zealand, Peter Jackson has become a hero to fans everywhere. 
+                He made his name as a director with horror films and series, then went on to direct bigger projects. The one that will get him off the ground, we've been talking about it for a while now: The Lord of the Rings.
+            </p>
+            <p class="page__article--texte">
+                It was a major project, but once it was finished, it would put him on the Hollywood podium, although he never expected such success :
+            </p>
+            <div class="citation">
+                <q 
+                    class="citation__texte"
+                    cite="https://lotr.fandom.com/fr/wiki/Peter_Jackson">
+                    Winning an Oscar would be an incredible moment in my career, there's no doubt about that. But the Lord of the Rings films aren't made for the Oscars, they're made for the public.
+                </q>
+                <p class="citation__auteur">- Peter Jackson -</p>
+            </div>
+                
+            <p class="page__article--texte">
+                The result ? 17 Oscars, 11 for the third film, making it one of the three most Oscar-winning films in the world, along with Ben-Hur and Titanic. Following this success, he continued to direct and produce great films, working with some of the greatest directors and actors, including Steven Spielberg and Adrien Brody. He also directed the Hobbit trilogy, which was also a huge success, but was less appreciated by fans because it took too many liberties with the book. This in no way detracts from his immense talent.            
+            </p>
+            <h2 class="page__header--chapo">
+                Here is a summary of his best-known films, both as director and producer           
+            </h2>
+            <div class="gallerie" x-data="{
+                async parcFilm () {
+                    const resp = await fetch('/json/info_films.json');
+                    return await resp.json();
+                    },
+                }">
+                <template
+                class="gallerie_template"
+                x-for="info of parcFilm">
+                    <div class="gallerie__contenu">
+                        <a :href="info.href" class="gallerie__contenu--image">
+                            <img 
+                                :src="info.img" 
+                                :alt="info.alt">
+                        </a>
+                        <div class="gallerie__description">
+                                <p class="gallerie__description--titre">Film :</p>
+                                <p class="gallerie__description--texte" x-text="info.film">Film title</p>
+                                <p class="gallerie__description--titre">Date :</p>
+                                <p class="gallerie__description--texte" x-text="info.date">Release date</p>
+                                <p class="gallerie__description--titre">Director :</p>
+                                <p class="gallerie__description--texte" x-text="info.realisateur">Director</p>
+                                <p class="gallerie__description--titre">Producer :</p>
+                                <p class="gallerie__description--texte" x-text="info.producteur">Producer</p>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <a href="/en/music.html" class="page__article--btn">
+                The Shire
+                <img src="/public/icones/chevron_right.svg" alt="arrow">
+            </a>
+        </article>
+
+    </main>
 
 
 
