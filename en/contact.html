@@ -108,7 +108,60 @@
     </header>
 
 
-
+    <main class="page">
+        <header class="page__header">
+            <img src="/public/img/accueil.webp" alt="hobbit hole" class="page__header--img">
+            <h1 class="page__header--titre">
+                Contact
+            </h1>          
+        </header>
+        <article class="page__article">
+            <h2 class="page__header--chapo">
+                If you have any questions, suggestions to share, or if you have noticed an error, do not hesitate to contact us, we will be happy to answer you.
+            </h2>
+            <form class="form" action="#">
+                <div class="form__element">
+                    <input 
+                        type="text" 
+                        id="Name" 
+                        name="Name" 
+                        placeholder="Name*"
+                        class="form__element--input" 
+                        required>
+                </div>
+                <div class="form__element">
+                    <input 
+                        type="text" 
+                        id="First Name" 
+                        name="First Name" 
+                        placeholder="First Name*"
+                        class="form__element--input" 
+                        required>
+                </div>
+                <div class="form__element">
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="Email*"
+                        class="form__element--input" 
+                        required>
+                </div>
+                <div class="form__element">
+                    <textarea 
+                        name="message" 
+                        id="message" 
+                        placeholder="Message*"
+                        rows="5" 
+                        class="form__element--input" 
+                        required></textarea>
+                </div>
+                <button type="submit" class="form__element--bouton">
+                    Send
+                </button>            
+            </form>
+        </article>
+    </main>
 
 
 
