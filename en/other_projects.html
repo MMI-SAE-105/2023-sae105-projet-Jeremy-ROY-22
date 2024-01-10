@@ -108,7 +108,51 @@
     </header>
 
 
+    <main class="page">
+        <header class="page__header">
+            <img src="/public/img/accueil.webp" alt="image hobbit hole" class="page__header--img">
+            <h1 class="page__header--titre ">
+                Other projects
+            </h1>
+        </header>
 
+        <article class="page__article">            
+            <h2 class="page__header--chapo space__chapo">
+                If you liked this site, we offer other sites made by the students of the group on the same theme
+            </h2>
+            <div 
+                class="projets"
+                x-data="{
+                    async infos_projet() {
+                        const resp = await fetch('/json/projets_groupe.json');
+                    return await resp.json();
+                    },
+                }">
+                <template
+                    class="gallery__template"
+                    x-for="infos of infos_projet">
+                    <div class="projet__block">
+                        <img 
+                            :src="infos.img" 
+                            :alt="infos.alt"
+                            class="projet__block--img">
+                        <div class="projet__block--infos">
+                            <h3 class="projet__block--titre" x-text="infos.projet">Project name</h3>
+                            <p class="projet__block--nom" x-text="infos.Nom">Last name</p>
+                            <p class="projet__block--prenom" x-text="infos.Prenom">First name</p>
+                            <a 
+                                :href="infos.href"
+                                class="projet__block--lien">
+                                Read
+                            </a>
+                        </div>
+                    </div>
+                </template>
+            </div>
+
+        </article>
+
+    </main>
 
 
 
